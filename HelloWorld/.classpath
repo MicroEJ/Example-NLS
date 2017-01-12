@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/main/resources"/>
-	<classpathentry kind="var" path="EDC-1.2"/>
-	<classpathentry kind="var" path="NLS-1.0.1"/>
+	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?project=HelloWorld&amp;ivyXmlPath=module.ivy&amp;confs=*"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
