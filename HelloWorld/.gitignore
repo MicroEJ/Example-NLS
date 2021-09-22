@@ -1,9 +1,0 @@
-/bin
-/*~
-/**/*~
-/.DS_Store
-/**/.DS_Store
-
-/launches/*.properties
-/.sonar
-/com.*

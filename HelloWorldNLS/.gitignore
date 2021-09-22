@@ -1,0 +1,5 @@
+bin/
+*~/
+launches/*.properties
+com.*/
+src-adpgenerated/
