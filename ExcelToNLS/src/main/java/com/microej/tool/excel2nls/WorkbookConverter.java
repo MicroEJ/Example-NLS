@@ -1,7 +1,7 @@
 /*
  * Java
  *
- * Copyright 2015-2021 MicroEJ Corp. All rights reserved.
+ * Copyright 2015-2022 MicroEJ Corp. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be found with this software.
  */
 package com.microej.tool.excel2nls;
@@ -13,9 +13,11 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 
 /**
- * As WorkbookConverter convert an Excel workbook to a list of NLS languages.
+ * A WorkbookConverter which converts an Excel workbook to a list of NLS
+ * languages.
  *
- * It assumes that each sheet of this workbook contains one NLS language and uses a {@link SheetReader} to extract this language.
+ * It assumes that each sheet of this workbook contains one NLS language and
+ * uses a {@link SheetReader} to extract this language.
  */
 public class WorkbookConverter {
 

@@ -1,5 +1,5 @@
 ..
-  Copyright 2021 MicroEJ Corp. All rights reserved.
+  Copyright 2021-2022 MicroEJ Corp. All rights reserved.
   Use of this source code is governed by a BSD-style license that can be found with this software.
 
 =========
@@ -8,6 +8,15 @@ Changelog
 
 The format is based on `Keep a Changelog. <https://keepachangelog.com/en/1.0.0/>`__,
 and this project adheres to `Semantic Versioning. <https://semver.org/spec/v2.0.0.html>`__
+
+
+[6.0.0] - 2022-11-29
+====================
+
+- Add fallback feature example.
+- Add `string resources` <https://developer.android.com/guide/topics/resources/string-resource>`__ support (XML).
+- Update the `HelloWorldNLS <HelloWorldNLS/CHANGELOG.md>`_ project to ``4.0.0``.
+- Update the `ExcelToNLS <ExcelToNLS/CHANGELOG.md>`_ project to ``4.0.0``.
 
 [5.0.0] - 2021-09-13
 ====================

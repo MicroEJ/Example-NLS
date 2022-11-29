@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translation file sample for fr_FR -->
+<resources>
+<string name="WORLD">Le Monde</string>
+<string name="HOW_ARE_YOU">Ça va ?</string>
+</resources>

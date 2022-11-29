@@ -1,10 +1,10 @@
 /*
  * Java
  *
- * Copyright 2015-2021 MicroEJ Corp. All rights reserved.
+ * Copyright 2015-2022 MicroEJ Corp. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be found with this software.
  */
-package com.microej.tool.excel2nls;
+package com.microej.tool.excel2nls.xml;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,18 +15,22 @@ import java.util.List;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.microej.tool.excel2nls.Dumper;
+import com.microej.tool.excel2nls.Language;
+import com.microej.tool.excel2nls.WorkbookConverter;
+
 /**
  * Hello world!
  *
- * From Excel to NLS.
+ * From Excel to XML for NLS.
  *
  */
-public class App {
+public class XMLMain {
 
 	private static final File INPUT_FOLDER = new File("./excel/");
 	private static final File EXCEL_FILE = new File(INPUT_FOLDER, "translations.xlsx");
 
-	private static final File OUTPUT_FOLDER = new File("../HelloWorldNLS/src/main/resources/nls");
+	private static final File OUTPUT_FOLDER = new File("../HelloWorldNLS/src/main/resources/nls/xml/");
 
 	public static void main(String[] args) throws IOException {
 		// Extract first workbook from Excel file
@@ -38,9 +42,9 @@ public class App {
 		WorkbookConverter converter = new WorkbookConverter(workbook);
 		List<Language> languages = converter.convert();
 
-		// Dump these languages to files
-		System.out.println("*** Generating NLS files ***");
-		Dumper dumper = new Dumper(OUTPUT_FOLDER, "HelloWorldMessages", languages);
+		// Dump these languages to XML files
+		System.out.println("*** Generating XML NLS files ***");
+		Dumper dumper = new XMLDumper(OUTPUT_FOLDER, "XMLTranslation", languages);
 		dumper.dump();
 
 		// List files

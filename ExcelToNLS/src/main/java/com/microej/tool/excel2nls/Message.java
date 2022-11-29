@@ -1,13 +1,14 @@
 /*
  * Java
  *
- * Copyright 2015-2021 MicroEJ Corp. All rights reserved.
+ * Copyright 2015-2022 MicroEJ Corp. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be found with this software.
  */
 package com.microej.tool.excel2nls;
 
 /**
- * A Message object represent an NLS message, which is a text and an ID.
+ * A Message object which represents an NLS message, containing a text and an
+ * ID.
  */
 public class Message {
 

@@ -4,10 +4,10 @@
 -->
 
 <ivy-module version="2.0" xmlns:ea="http://www.easyant.org" xmlns:ej="https://developer.microej.com" ej:version="2.0.0">
-	<info organisation="com.microej.example.nls" module="helloworld" status="integration" revision="3.0.0">
+	<info organisation="com.microej.example.nls" module="helloworld" status="integration" revision="4.0.0">
 		<ea:build organisation="com.is2t.easyant.buildtypes" module="build-firmware-singleapp" revision="1.4.+"/>
-		<ea:property name="application.main.class" value="com.microej.externalresourceloader.ExternalImages"/>
-		<ea:property name="virtual.device.sim.only" value="set"/>
+		<ea:property name="application.main.class" value="com.microej.example.nls.FallbackHelloWorld"/>
+		<ea:property name="platform-loader.target.platform.dir" value="C:\Users\stinlot\Documents\gitlab\P0234_STM32F7508-DK\STM32F7508-Platform-CM7hardfp_GCC48-1.5.0\source" />
 	</info>
 	
 	<configurations defaultconfmapping="default->default;provided->provided;vdruntime->default">
@@ -27,9 +27,9 @@
 	</publications>
 	
 	<dependencies>
-		<dependency org="ej.api" name="edc" rev="1.3.3" conf="provided->*" />
-		<dependency org="ej.library.runtime" name="nls" rev="3.0.1" conf="provided->*" />
-		<dependency org="com.microej.library.runtime" name="nls-po" rev="2.2.0"/>
+		<dependency org="ej.api" name="edc" rev="1.3.3"/>
+		<dependency org="ej.library.runtime" name="nls" rev="3.1.0"/>
+		<dependency org="com.microej.library.runtime" name="binary-nls" rev="2.5.0" transitive="true"/>
 
 	</dependencies>
 </ivy-module>

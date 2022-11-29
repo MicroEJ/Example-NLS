@@ -1,7 +1,7 @@
 /*
  * Java
  *
- * Copyright 2015-2021 MicroEJ Corp. All rights reserved.
+ * Copyright 2015-2022 MicroEJ Corp. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be found with this software.
  */
 package com.microej.tool.excel2nls;
@@ -10,7 +10,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * A Language object represent an NLS language. It has a display name, a locale and a list of {@link Message}s.
+ * A Language object which represents an NLS language. It has a display name, a
+ * locale and a list of {@link Message}s.
  */
 public class Language {
 
@@ -19,7 +20,8 @@ public class Language {
 	private final List<Message> messages;
 
 	/**
-	 * Instantiate a new language. Both display name and locale equal the empty string.
+	 * Instantiate a new language. Both display name and locale will be empty
+	 * strings.
 	 */
 	public Language() {
 		this("", "");

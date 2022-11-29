@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project converts an Excel file to a set of PO files and saves them as 
+This project converts an Excel file to a set of PO or XML files and saves them as 
 resources in the [HelloWorldNLS project](../HelloWorldNLS)
 
 ## Project structure
@@ -45,14 +45,18 @@ The Apache POI JAR files need to be added to the Java build path:
 
 In order to launch the `ExcelToNLS` project:
 
-- Go to the `launches/` folder,
-- Right-click on the `ExcelToNLS.launch` file,
-- Select `Run As -> ExcelToNLS`.
+- Go to the `launches/` folder.
+
+Depending on the output format you want:
+- For a .po file: Right-click on the `ExcelToPONLS.launch` file and select `Run As -> ExcelToPONLS`.
+- For a .xml file: Right-click on the `ExcelToXMLNLS.launch` file and select `Run As -> ExcelToXMLNLS`.
 
 A trace should appear in the console, saying that the NLS files have been
-deployed in the output folder.
+deployed in the output folder:
+- [HelloWorldNLS/src/main/resources/nls/po](../HelloWorldNLS/src/main/resources/nls/po/) for a .po file.
+- [HelloWorldNLS/src/main/resources/nls/xml](../HelloWorldNLS/src/main/resources/nls/xml/) for a .xml file.
 
 ---
 _Markdown_   
-_Copyright 2021 MicroEJ Corp. All rights reserved._  
+_Copyright 2021-2022 MicroEJ Corp. All rights reserved._  
 _Use of this source code is governed by a BSD-style license that can be found with this software._

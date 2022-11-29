@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translation file sample for es_ES -->
+<resources>
+<string name="HELLO">Hola</string>
+<string name="WORLD">Mundo</string>
+<string name="HOW_ARE_YOU">¿ Qué tal ?</string>
+</resources>
