@@ -11,6 +11,6 @@ com.microej.example.nls.generated.POTranslation
 com.microej.example.nls.generated.XMLTranslation
 
 
-#Fallback examples
+#Fallback example
 com.microej.example.nls.generated.POFallback:es_ES
 com.microej.example.nls.generated.XMLFallback:en_US
